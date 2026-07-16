@@ -1,0 +1,88 @@
+<h1>LOG 4823</h1>
+
+<p>
+DATE: UNKNOWN<br>
+STATUS: PARTIALLY RECOVERED<br>
+ACCESS LEVEL: RESTRICTED
+</p>
+
+<hr>
+
+<h2>SUBJECT FILES</h2>
+
+<p>
+<strong>Markiplier</strong><br>
+Status: <span class="morphed">MORPHED</span><br>
+Strength: 15/??<br>
+Speed: 7.5/10<br>
+Log Note: "He just didn’t listen"
+</p>
+
+<p>
+<strong>Yub</strong><br>
+Status: <span class="morphed">MORPHED</span><br>
+Strength: 14.3/??<br>
+Speed: 8.5/10<br>
+Log Note: "He was oblivious"
+</p>
+
+<p>
+<strong>JimmyHere</strong><br>
+Status: <span class="alive">ALIVE</span><br>
+Strength: 7.5/10<br>
+Speed: 7/10<br>
+Log Note: "Swaus"
+</p>
+
+<p>
+<strong>StanleyMOV</strong><br>
+Status: <span class="alive">ALIVE</span><br>
+Strength: 8/10<br>
+Speed: 8.5/10<br>
+Log Note: "Fish!"
+</p>
+
+<hr>
+
+<p id="more">[DATA EXPUNGED]</p>
+
+<script>
+setTimeout(() => {
+    document.getElementById("more").innerText = "More to come...";
+}, 6000);
+</script>
+
+<style>
+body {
+    background-color: black;
+    color: #cfcfcf;
+    font-family: monospace;
+}
+
+h1, h2 {
+    color: red;
+}
+
+.morphed {
+    color: crimson;
+    font-weight: bold;
+}
+
+.alive {
+    color: lime;
+}
+
+hr {
+    border: 1px solid #333;
+}
+</style>
+<script>
+setInterval(() => {
+    if (Math.random() < 0.1) {
+        document.body.style.filter = "blur(1px)";
+        setTimeout(() => {
+            document.body.style.filter = "none";
+        }, 100);
+    }
+}, 500);
+</script>
