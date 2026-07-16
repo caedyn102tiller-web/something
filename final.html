@@ -1,0 +1,19 @@
+<h1 id="msg">You stayed too long.</h1>
+
+<script>
+let msgs = [
+ "We saw you.",
+ "You clicked everything.",
+ "You opened the logs.",
+ "You listened.",
+ "Now it knows you."
+];
+
+let i = 0;
+setInterval(()=>{
+ if(i < msgs.length){
+   document.getElementById("msg").innerText = msgs[i];
+   i++;
+ }
+}, 3000);
+</script>
