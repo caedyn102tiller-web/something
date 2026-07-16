@@ -1,16 +1,25 @@
-<h1>LOG 4823</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIGNAL FOUND</title>
+<style>
+body { background:black; color:red; text-align:center; font-family:monospace; }
+button { background:red; color:black; padding:10px; margin:10px; }
+</style>
+</head>
+<body>
 
-<p>
-Subject YUB terminated.<br>
-Cause: Unknown entity interference.<br>
-Audio file corrupted.<br>
-</p>
+<h1>UNIDENTIFIED SIGNAL DETECTED</h1>
+<p>Do you wish to continue?</p>
 
-<p id="extra"></p>
+<button onclick="location.href='watch.html'">YES</button>
+<button onclick="glitch()">NO</button>
 
 <script>
-setTimeout(() => {
- document.getElementById("extra").innerText =
- "It wasn't supposed to leave the video.";
-}, 5000);
+function glitch(){
+    document.body.innerHTML = "<h1>...you already did.</h1>";
+}
 </script>
+
+</body>
+</html>
