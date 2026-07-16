@@ -1,0 +1,24 @@
+<h1 id="text">LOADING FEED...</h1>
+
+<script>
+let lines = [
+ "Connecting...",
+ "Signal unstable...",
+ "User detected...",
+ "Wait...",
+ "Why are you here?"
+];
+
+let i = 0;
+setInterval(() => {
+ if(i < lines.length){
+   document.getElementById("text").innerText = lines[i];
+   i++;
+ }
+}, 2000);
+
+// Secret unlock after time
+setTimeout(() => {
+  window.location.href = "signal.html";
+}, 15000);
+</script>
