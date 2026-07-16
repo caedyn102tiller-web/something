@@ -1,0 +1,20 @@
+<h1>PLAYBACK LOG: 4823</h1>
+
+<p>Insert code from the video:</p>
+
+<input id="code">
+<button onclick="check()">ENTER</button>
+
+<p id="result"></p>
+
+<script>
+function check(){
+ let code = document.getElementById("code").value;
+
+ if(code === "YUB4823"){
+   window.location.href = "log_4823.html";
+ } else {
+   document.getElementById("result").innerText = "Incorrect... it sees that.";
+ }
+}
+</script>
